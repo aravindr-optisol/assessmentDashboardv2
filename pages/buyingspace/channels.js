@@ -9,7 +9,7 @@ import DateBaloon from "../../src/components/DateBaloon";
 import ChatBubble from "../../src/components/ChatBubble";
 import NotificationContent from "../../src/components/NotificationContent";
 import { Fragment } from "react";
-
+import ViewMoreButton from "../../src/components/ViewMoreButton";
 const Channels = () => {
   let channelList = [{ channelName: "Wordpress", image: "/wordPress.png" },
   { channelName: "Kentico Kontent", image: "/kento.png" },
@@ -63,6 +63,19 @@ const Channels = () => {
       }
     ]
   }]
+  let requiremnets=["Build website","Build blogging site","Post blogs site","Post blogs and track traffic","Host a forum","Supports SasS"]
+  let Resources=[{
+    type:"pdf",
+    fileName:"Quotation-Business Plan",
+    fileSize:"25 MB",
+    imageUrl:"/pdf.png"
+  },{
+    type:"doc",
+    fileName:"how-to-choose-headless-cms",
+    fileSize:null,
+    imageUrl:"/doc.png"
+  }
+]
   return (
     <BuyingSpaceLayout>
       <div className="container-fluid p-2">
@@ -185,50 +198,36 @@ const Channels = () => {
             </ContainerCard>
             <ContainerCard className="container-fluid p-4 mb-5 rounded">
               <div className="row AddedReq">
-                <div className="fontBold d-inline w-auto">Added Requirements - 05 </div>
+                <div className="fontBold d-inline w-auto">Added Requirements - {requiremnets.length <10 ? `0${requiremnets.length}` : requiremnets.length}</div>
                 <Image src={"/edit.svg"} width={20} height={20} alt="" />
               </div>
-              <div className="Rectangle-4035">Build website</div>
-              <div className="Rectangle-4035">Build blogging site</div>
-              <div className="Rectangle-4035">Post blogs site</div>
-              <div className="Rectangle-4035">Post blogs and track traffic</div>
-              <div className="Rectangle-4035">Host a forum</div>
-              <div className="Rectangle-4035">Supports SasS</div>
-              <div className="viewMoreRequirements">
-                <div className="d-inline-block p-2 fontBold">
-                  View More
-                </div>
-                <div className="d-inline-block viewMoreChannels">
-                  <Image src={"/roundBlue.png"} width={20} height={20} alt="round" />
-                </div>
-              </div>
+
+              {
+              requiremnets.map((data)=>{
+                return( <div className="Rectangle-4035">{data}</div>)
+              })
+              }
+            <ViewMoreButton/>
             </ContainerCard>
             <ContainerCard className="container-fluid p-4 mb-5 rounded">
-
               <div className="row AddedReq">
-                <div className="fontBold d-inline w-auto">Documents/Files/Links - 06 </div>
+                <div className="fontBold d-inline w-auto">Documents/Files/Links -{Resources.length<10 ?`0${Resources.length}`:Resources.length}</div>
                 <Image src={"/edit.svg"} width={20} height={20} alt="" />
               </div>
-              <div className="Rectangle-40 mt-4">
-                <div className="d-inline-block viewMoreChannels p-2">
-                  <Image src={"/pdf.png"} width={20} height={20} alt="round" />
+              {
+              Resources.map((data,index)=>{
+                return(
+                  <div key={index} className="Rectangle-40 mt-4">
+                  <div className="d-inline-block viewMoreChannels p-2">
+                    <Image src={data.imageUrl} width={20} height={20} alt="round" />
+                  </div>
+                  {data.fileName}
+                 {data.fileSize && <span className="p-2 text-black-50">25 MB</span>} 
                 </div>
-                Quotation-Business Plan
-                <span className="p-2 text-black-50">25 MB</span>
-              </div>
-              <div className="Rectangle-40 text-primary">
-                <div className="d-inline-block viewMoreChannels p-2 ">
-                  <Image src={"/doc.png"} width={20} height={20} alt="round" />
-                </div>
-                how-to-choose-headless-cms</div>
-              <div className="viewMoreRequirements">
-                <div className="d-inline-block p-2 fontBold">
-                  View More
-                </div>
-                <div className="d-inline-block viewMoreChannels">
-                  <Image src={"/roundBlue.png"} width={20} height={20} alt="round" />
-                </div>
-              </div>
+                )
+              })
+              }
+              <ViewMoreButton/>
             </ContainerCard>
           </div>
         </div>

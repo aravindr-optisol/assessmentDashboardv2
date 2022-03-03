@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   redirects:async()=>{
-    
     return[ 
     {
       source: '/',
