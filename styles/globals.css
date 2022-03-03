@@ -1,0 +1,236 @@
+html,
+body {
+  height: 100%;
+  background-color:#f3f5f9;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.pageContent{
+  width: 92%;
+  float: right;
+}
+a{
+text-decoration: none;
+color: black;
+}
+/* .logo{
+  text-align: center;
+} */
+.navSpan{
+  display: block;
+  margin: 11px;
+  cursor: pointer;
+}
+.navSpan{
+  opacity: 0.3;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  background-color: #003656;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  word-break: break-word;
+}
+
+.sidebar a {
+  display: block;
+  color: white !important;
+  padding: 5px 16px 16px 16px;
+  text-decoration: none;
+  /* opacity: 0.3; */
+  font-size: 14px;
+}
+ 
+.activeNav {
+  color: white;
+  opacity: 1;
+}
+.search svg{
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.searchInput{
+  text-indent: 30px;
+  background-color: #f3f5f9;
+}
+.resultContainer{    
+  padding: 20px 0;
+  display: block;
+  }
+
+
+/* .ChannelsLeft{
+  height:1000px;
+} */
+/* .sidebar a:hover:not(.active) {
+  color: white;
+  opacity: 1;
+} */
+.navSpan:hover{
+  opacity: 1;
+}
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.activeChannel {
+  margin: 1px 0;
+  padding: 0 0 0 20px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
+  background-color: #f9f9f9;
+  border-right: 4px solid #003656;
+}
+.Ellipse-1157 {
+  width: 8px;
+  height: 8px;
+  background-color: #39895d;
+  display: inline-block;
+  border-radius: 30px;
+}
+.button123{
+  margin-left: auto;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
+.Path-18915 {
+  width: fit-content;
+  height: 49px;
+  padding: 10px;
+  border: solid 1px #ccd2de;
+  background-color: #ebf2ff;
+  border-radius: 0px 15px 15px 15px;
+}
+.Path-18916 {
+  width: fit-content;
+  height: 49px;
+  padding: 10px;
+  border: solid 1px #ccd2de;
+  background-color: #ffffff;
+  border-radius: 0px 15px 15px 15px;
+}
+
+.buySpaceTitle{
+  font-size: 24px;
+  font-weight: bold;
+}
+.buySpaceDesc{
+  font-size: 18px;
+}
+.Rectangle-4674 {
+  width: 220px;
+  height: 180px;
+  margin: 20px 21px 0 0;
+  padding: 20px 19.5px 20px 20px;
+  border: solid 1px #ddd;
+  background-color: #fff;
+}
+.spacesWidth{
+  width: 20%;
+  display: inline-block;
+}
+.spaceCard img{
+top:6px !important;
+}
+.spaceCard2 img{
+  top:12px !important;
+  }
+.fontBold{
+  font-weight: bold;
+}
+.fontColorGrey{
+  color:#666666
+}
+
+.viewMoreRequirements{
+  color: #1488e1 !important;
+  margin-right: 20px;
+}
+.Rectangle-40{
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+.logo{
+  border-bottom: 0.5px solid #cccccc54;
+    margin-bottom: 15px;
+}
+.viewMoreChannels span{
+  top: 5px;
+}
+.Rectangle-3 {
+  width: fit-content;
+  height: 43px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fbaa29;
+  /* margin: 10px 60px 0px auto; */
+  cursor: pointer;
+}
+.BuyingSpaceh1{
+  width: auto;
+}
+.Rectangle-4035 {
+  padding: 20px 10px 20px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.AddedReq span{
+  margin-left:auto !important;
+  padding: 10px;
+}
+.Channels {
+  width: 92px;
+  height: 24px;
+  margin: 0 205px 8px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  color: #222;
+}
+@media screen and (max-width: 901px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+  .navSpan{
+    display:inline-block;
+    margin: 11px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+  .navSpan{
+    display:inline-block;
+    margin: 11px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}

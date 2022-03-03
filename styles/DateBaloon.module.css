@@ -1,0 +1,25 @@
+.dateContainer{
+    position:absolute
+  }
+.Rectangle_343{
+    position: absolute; 
+}
+.Line_1685{
+    position: absolute;
+  }
+.Line_1685 {
+    width: 18rem;
+    height: 1px;
+    background-color: #ddd;
+    margin: 13px 0 0 0;
+    margin-left: 190px;
+  }
+.Rectangle_343 {
+    width: 225px;
+    height: 26px;
+    text-align: center;
+    border-radius: 13px;
+    border: solid 1px #ccc;
+    background-color: #eee;
+    z-index: 12;
+  }

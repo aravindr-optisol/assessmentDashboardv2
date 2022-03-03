@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="24" viewBox="0 0 22 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6dba8b;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #63cb92;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-width: 0.8px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1771" data-name="Rectangle 1771" class="cls-1" width="22" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_30" data-name="Mask Group 30" class="cls-2">
+    <circle id="Ellipse_221" data-name="Ellipse 221" class="cls-3" cx="8" cy="8" r="8" transform="translate(3 4)"/>
+    <path id="Path_3223" data-name="Path 3223" class="cls-4" d="M2293.183,1152.066a.383.383,0,0,1-.284-.128l-1.781-1.939a.467.467,0,0,1,0-.62.379.379,0,0,1,.568,0l1.5,1.63,3.563-3.88a.378.378,0,0,1,.568,0,.467.467,0,0,1,0,.62l-3.846,4.189A.384.384,0,0,1,2293.183,1152.066Z" transform="translate(-2283.501 -1137.5)"/>
+  </g>
+</svg>

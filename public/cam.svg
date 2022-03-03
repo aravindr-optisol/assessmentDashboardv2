@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1768" data-name="Rectangle 1768" class="cls-1" width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="Video_Camera" data-name="Video Camera" class="cls-2">
+    <path id="Path_2286" data-name="Path 2286" class="cls-3" d="M2299.738,4034.088a.915.915,0,0,0-.919.079l-3.419,2.531v-1.863a.762.762,0,0,0-.744-.835h-12.82a.835.835,0,0,0-.835.835v8.765a.835.835,0,0,0,.835.835h12.82a.762.762,0,0,0,.744-.835v-1.864l3.419,2.531a.9.9,0,0,0,.524.167.876.876,0,0,0,.384-.088.844.844,0,0,0,.473-.746v-8.765A.834.834,0,0,0,2299.738,4034.088Zm-6.008,8.677h-11.06v-7.1h11.06Zm4.8-.835-2.922-2.209v-1.007l2.922-2.209Z" transform="translate(-2278.016 -4027.434)"/>
+  </g>
+</svg>
